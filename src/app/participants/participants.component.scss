@@ -1,0 +1,26 @@
+@import "../app.component.scss";
+
+.bc-participants-container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bc-section-featured {
+    position: relative;
+    .heading-section{
+        h2{
+            font-weight: 100 !important;
+            strong{
+                font-weight: 700;
+                color: $secondary;
+                background: lighten($secondary,25%);
+            }
+        }
+    }
+    &.bc-section-featured-2{
+        margin-top: 0 !important;
+        padding-top: 7em;
+    }
+
+}

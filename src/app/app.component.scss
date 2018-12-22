@@ -1,0 +1,125 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+$font-primary: 'Work Sans',Arial, sans-serif;
+
+$white: #fff;
+$black: #404044;
+
+$primary: #ee76ad;
+$secondary: #efac78;
+$tertiary: #29bae4;
+$quarternary: #79efb4;
+
+@mixin gradient-background(){
+  background: rgba(238,118,173,1);
+  background: -moz-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(238,118,173,1)), color-stop(100%, rgba(239,172,120,1)));
+  background: -webkit-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+  background: linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 );
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition:     all $transition ease;
+    transition:         all $transition ease;
+}
+
+html {
+  // overflow-x: hidden;
+}
+body {
+  font-family: $font-primary;
+  background: $white;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: lighten($black,30%);
+  &.menu-show {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+}
+a {
+  transition: .3s all ease;
+  color: $primary;
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  color: $black;
+  font-weight: 400;
+}
+
+.text-primary {
+  color: $primary!important;
+}
+
+.bg-light {
+  background: #f8faff!important;
+}
+
+.bg-primary{
+  background: $primary;
+}
+
+//BUTTON
+.btn {
+  cursor: pointer;
+  @include border-radius(30px);
+  box-shadow: none!important;
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+  &.btn-primary {
+    background: lighten($primary,25%);
+    border: 2px solid lighten($primary,25%);
+    color: $primary;
+    &:hover {
+      border: 2px solid $primary;
+      background: transparent;
+      color :$primary;
+    }
+    &.btn-outline-primary {
+      border: 2px solid $primary;
+      background: transparent;
+      color :$primary;
+      &:hover {
+        border: 2px solid transparent;
+        background: $primary;
+        color :$white;
+      }
+    }
+  }
+  &.btn-outline-white {
+    border-color: rgba($white, .8);
+    background: none;
+    @include border-radius(30px);
+    border-width: 2px;
+    color: $white;
+    &:hover, &:focus, &:active {
+      background: $white;
+      border-color: $white;
+      color: $primary;
+    }
+  }
+}
