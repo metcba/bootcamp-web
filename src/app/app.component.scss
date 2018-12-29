@@ -9,20 +9,20 @@ $font-weight-normal: 800 !default;
 $white: #fff;
 $black: #404044;
 
-$primary: #ee76ad;
-$secondary: #efac78;
+$primary: #828fff;
+$secondary: #d496ff;
 $tertiary: #29bae4;
 $quarternary: #79efb4;
 
 @mixin gradient-background(){
-  background: rgba(238,118,173,1);
-  background: -moz-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(238,118,173,1)), color-stop(100%, rgba(239,172,120,1)));
-  background: -webkit-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
-  background: linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 );
+  background: #828fff;
+  background: -moz-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #828fff), color-stop(100%, #d496ff));
+  background: -webkit-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
+  background: -o-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
+  background: -ms-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
+  background: linear-gradient(45deg, #828fff 0%, #d496ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828fff', endColorstr='#d496ff', GradientType=1 );
 }
 
 @mixin border-radius($radius) {
@@ -100,9 +100,9 @@ h1, h2, h3, h4, h5,
     outline: none;
   }
   &.btn-primary {
-    background: lighten($primary,25%);
     border: 2px solid lighten($primary,25%);
-    color: $primary;
+    color: white;
+    @include gradient-background();
     &:hover {
       border: 2px solid $primary;
       background: transparent;
