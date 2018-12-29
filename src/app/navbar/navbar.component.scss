@@ -193,3 +193,16 @@
   font-size: 20px;
   text-transform: uppercase;
 }
+
+.sticky {
+    background: #fff !important;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    .nav-item a {
+      color: #8b8b92 !important;
+    }
+    height: 80px;
+}

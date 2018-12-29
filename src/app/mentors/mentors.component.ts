@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mentors.component.scss']
 })
 export class MentorsComponent implements OnInit {
-  speakers: list;
-  mentors: list;
+  speakers: any;
+  mentors: any;
 
   constructor() { }
 
