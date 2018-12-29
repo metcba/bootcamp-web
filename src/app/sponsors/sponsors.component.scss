@@ -1,0 +1,26 @@
+@import "../app.component.scss";
+
+.sponsor-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .logo {
+        margin: 10px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .message {
+        margin-top: 40px;
+        p {
+            text-align: center;
+        }
+        a {
+            margin-top: 20px;
+        }
+    }
+}

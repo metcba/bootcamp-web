@@ -6,14 +6,14 @@
         <h2 class="mb-4">No es sólo enseñar a programar, es inspirar vocación</h2>
         <p>La parte más importante de la formación es el acompañamiento a través de mentoras. Trabajamos con mujeres que trabajan en distintas áreas, para guiar a cada uno de los equipos durante su aprendizaje en el bootcamp.
         </p>
-      <p><a href="#" class="btn btn-primary px-4">Sumate al equipo</a></p>
+      <p><a href="#" class="btn btn-primary px-4">Convertite en mentora</a></p>
       </div>
     </div>
     <div *ngIf="speakers.length > 0" class="row">
       <div *ngFor="let speaker of speakers" class="col-lg-3 col-md-6">
         <div class="single-mentor">
           <div class="thumb">
-            <img src="img/p1.png" alt="">
+            <img src="{{ speaker.photo }}" alt="">
           </div>
           <div class="details">
             <h4>{{ speaker.name }}</h4>
