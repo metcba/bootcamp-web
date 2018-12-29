@@ -1,0 +1,43 @@
+<section class="bc-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section bc-animate">
+        <span class="subheading">Nuestras mentoras</span>
+        <h2 class="mb-4">No es sólo enseñar a programar, es inspirar vocación</h2>
+        <p>La parte más importante de la formación es el acompañamiento a través de mentoras. Trabajamos con mujeres que trabajan en distintas áreas, para guiar a cada uno de los equipos durante su aprendizaje en el bootcamp.
+</p>
+      <p><a href="#" class="btn btn-primary px-4">Sumate al equipo</a></p>
+      </div>
+    </div>
+    <div *ngIf="speakers.length > 0" class="row">
+      <div *ngFor="let speaker of speakers" class="col-lg-3 col-md-6">
+        <div class="single-mentor">
+          <div class="thumb">
+            <img src="img/p1.png" alt="">
+          </div>
+          <div class="details">
+            <h4>{{ speaker.name }}</h4>
+            <p>
+              Who are in extremely love with eco friendly system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mentors.length > 0" class="row">
+      <div *ngFor="let mentor of mentors" class="col-lg-3 col-md-6">
+        <div class="single-mentor">
+          <div class="thumb">
+            <img src="{{ mentor.photo }}" alt="">
+          </div>
+          <div class="details">
+            <h4>{{ mentor.name }}</h4>
+            <p>
+              Who are in extremely love with eco friendly system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

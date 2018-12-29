@@ -8,9 +8,10 @@
 
 .bc-section-featured {
     position: relative;
-    .heading-section{
-        h2{
+    .heading-section {
+        h2 {
             font-weight: 100 !important;
+            font-size: 32px;
             strong{
                 font-weight: 700;
                 color: $secondary;
@@ -18,7 +19,7 @@
             }
         }
     }
-    &.bc-section-featured-2{
+    &.bc-section-featured-2 {
         margin-top: 0 !important;
         padding-top: 7em;
     }

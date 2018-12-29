@@ -1,0 +1,31 @@
+@import "../app.component.scss";
+
+.single-mentor {
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    margin-top: 20px;
+}
+
+.single-mentor {
+    .thumb {
+        padding: 30px;
+        border-bottom: 1px solid #eee;
+        img {
+            max-width:100%;
+            max-height:100%;
+        }
+    }
+    .details {
+        padding: 20px;
+        background-color: #f9f9ff;
+        h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
