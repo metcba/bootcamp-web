@@ -1,0 +1,23 @@
+<section class="program-container">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 header-text text-center">
+          <h1 class="pb-10 text-white">Lo que vas a aprender</h1>
+          <p class="text-white">
+              El bootcamp consiste de 5 días presenciales más una actividad previa que deberías ser capaz de resolver antes de comenzar. En cada día, comenzaremos con una introducción a los contenidos y pasaremos a actvidades prácticas sobre los proyectos de cada equipo.
+          </p>
+      </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let day of program" class="col-lg-4 col-md-6">
+            <div class="program-day">
+                <a href="#" class="title d-flex flex-row">
+                    <span class="lnr lnr-user"></span>
+                    <h4>{{ day.day }}</h4>
+                </a>
+                <p>{{day.desc}}</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>

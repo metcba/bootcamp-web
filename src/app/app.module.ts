@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { MentorsComponent } from './mentors/mentors.component';
+import { ProgramComponent } from './program/program.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MentorsComponent } from './mentors/mentors.component';
     NavbarComponent,
     HeroComponent,
     ParticipantsComponent,
-    MentorsComponent
+    MentorsComponent,
+    ProgramComponent
   ],
   imports: [
     BrowserModule
