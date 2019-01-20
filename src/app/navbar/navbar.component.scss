@@ -8,13 +8,17 @@
   z-index: 3;
   top: 30px;
   @include media-breakpoint-down(md) {
-    background: $black!important;
+    background: $dark!important;
     top: 0;
     position: relative;
   }
 
   .navbar-brand {
     color: $white;
+  }
+
+  .logo {
+    max-height: 60px;
   }
 
   .navbar-nav {

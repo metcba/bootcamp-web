@@ -13,21 +13,24 @@
     bottom: 0;
     content: '';
     opacity: .97;
-    background: url('../../assets/hero-bg.jpg');
+    background: url('../../assets/hero-bg2.png');
     background-size: cover;
   }
 }
 
 .slider-text{
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: $white;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $white;
+  .hero-content {
+    margin-top: 50px;
+  }
   h1 {
-    font-size: 55px;
+    font-size: 75px;
     color: $white;
     line-height: 1.2;
     font-weight: 200;
@@ -42,7 +45,7 @@
     font-size: 20px;
     line-height: 1.5;
     font-weight: 300;
-    color: rgba(0,0,0,.8);
+    color: rgba(255,255,255,.8);
     strong{
       font-weight: 700;
       a{
@@ -69,6 +72,8 @@
   }
   .btn-primary{
     border: 1px solid rgba(255,255,255,.4);
+    font-size: 24px;
+    margin-top: 10px;
     @include border-radius(30px);
     &:hover, &:focus{
       background: $white !important;
