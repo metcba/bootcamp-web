@@ -8,21 +8,22 @@ $font-weight-normal: 800 !default;
 
 $white: #fff;
 $black: #404044;
+$dark: #401144;
 
-$primary: #828fff;
-$secondary: #d496ff;
+$primary: #753d85;
+$secondary: #e24c58;
 $tertiary: #29bae4;
 $quarternary: #79efb4;
 
 @mixin gradient-background(){
-  background: #828fff;
-  background: -moz-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #828fff), color-stop(100%, #d496ff));
-  background: -webkit-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
-  background: -o-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
-  background: -ms-linear-gradient(45deg, #828fff 0%, #d496ff 100%);
-  background: linear-gradient(45deg, #828fff 0%, #d496ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828fff', endColorstr='#d496ff', GradientType=1 );
+  background: #753d85;
+  background: -moz-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #753d85), color-stop(40%, #e24c58));
+  background: -webkit-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
+  background: -o-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
+  background: -ms-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
+  background: linear-gradient(45deg, #753d85 0%, #e24c58 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753d85', endColorstr='#e24c58', GradientType=1 );
 }
 
 @mixin border-radius($radius) {
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5,
     outline: none;
   }
   &.btn-primary {
-    border: 2px solid lighten($primary,25%);
+    border: 2px solid $white;
     color: white;
     @include gradient-background();
     &:hover {
