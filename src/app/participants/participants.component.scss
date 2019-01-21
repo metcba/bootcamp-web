@@ -8,17 +8,6 @@
 
 .bc-section-featured {
     position: relative;
-    .heading-section {
-        h2 {
-            font-weight: 100 !important;
-            font-size: 32px;
-            strong{
-                font-weight: 700;
-                color: $secondary;
-                background: lighten($secondary, 15%);
-            }
-        }
-    }
     &.bc-section-featured-2 {
         margin-top: 0 !important;
         padding-top: 7em;

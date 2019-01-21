@@ -73,6 +73,7 @@ a {
     color: $primary;
   }
 }
+
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
@@ -163,9 +164,19 @@ h1, h2, h3, h4, h5,
     letter-spacing: 2px;
     color: rgba(0,0,0,.2);
   }
+  h1{
+    font-weight: 100 !important;
+    font-size: 38px;
+    strong{
+        font-weight: 500;
+        color: $primary;
+        background: lighten($secondary, 35%);
+    }
+  }
   h2{
     font-size: 38px;
     font-weight: 700;
+    margin-bottom: 24px;
     @include media-breakpoint-down(sm){
       font-size: 28px;
     }
