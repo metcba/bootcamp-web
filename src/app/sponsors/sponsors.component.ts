@@ -12,9 +12,10 @@ export class SponsorsComponent implements OnInit {
 
   ngOnInit() {
     this.sponsors = [
-      {name: 'Globant', img: 'assets/globant.jpg', site: 'https://www.globant.com'},
+      {name: 'McAfee', img: 'assets/mcafee.png', site: 'https://home.mcafee.com/'},
       {name: 'MeTCba', img: 'assets/metcba.png', site: 'https://metcba.org'},
-      {name: 'Women Tech Makers', img: 'assets/wtm.png', site: 'https://www.womentechmakers.com/'},
+      {name: 'Globant', img: 'assets/globant.jpg', site: 'https://www.globant.com'},
+      //{name: 'Women Tech Makers', img: 'assets/wtm.png', site: 'https://www.womentechmakers.com/'},
     ]
   }
 
