@@ -80,4 +80,14 @@
       color: $black;
     }
   }
+  .announce{
+    font-size: 24px;
+    margin-top: 50px;
+    span {
+      @include border-radius(30px);
+      padding: 20px 30px;
+      background: rgba(255, 193, 7, 1);
+      font-weight: 700;
+    }
+  }
 }

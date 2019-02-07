@@ -1,6 +1,13 @@
 <section class="sponsor-section">
   <div class="container">
     <div class="row align-items-center">
+      <div *ngFor="let organizer of organizers" class="col logo">
+          <a href="{{ organizer.site }}">
+            <img src="{{ organizer.img }}" alt="{{ organizer.name }}">
+          </a>
+      </div>
+    </div>
+    <div class="row align-items-center">
       <div *ngFor="let sponsor of sponsors" class="col logo">
           <a href="{{ sponsor.site }}">
             <img src="{{ sponsor.img }}" alt="{{ sponsor.name }}">
