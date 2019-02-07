@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorsComponent implements OnInit {
   sponsors: any;
+  organizers: any;
 
   constructor() { }
 
