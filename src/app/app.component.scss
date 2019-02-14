@@ -17,13 +17,13 @@ $quarternary: #79efb4;
 
 @mixin gradient-background(){
   background: #753d85;
-  background: -moz-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #753d85), color-stop(40%, #e24c58));
-  background: -webkit-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -o-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: -ms-linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  background: linear-gradient(45deg, #753d85 0%, #e24c58 40%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753d85', endColorstr='#e24c58', GradientType=1 );
+  background: -moz-linear-gradient(45deg, #753d85 0%, $secondary 40%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #753d85), color-stop(40%, $secondary));
+  background: -webkit-linear-gradient(45deg, #753d85 0%, $secondary 40%);
+  background: -o-linear-gradient(45deg, #753d85 0%, $secondary 40%);
+  background: -ms-linear-gradient(45deg, #753d85 0%, $secondary 40%);
+  background: linear-gradient(45deg, #753d85 0%, $secondary 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753d85', endColorstr='$secondary', GradientType=1 );
 }
 
 @mixin border-radius($radius) {

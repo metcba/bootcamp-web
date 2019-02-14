@@ -1,26 +1,53 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-6 text-center">
+      <div class="col-lg-6 col-md-8 text-center">
         <div class="footer-col">
           <h6>Contacto</h6>
           <p>Por consultas, escribinos a <strong>bootcamp@metcba.org</strong> y nos contactaremos con vos!</p>
+          <form (ngSubmit)="processForm()">
+            <div class="form-group row"> <!-- Nombre -->
+              <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" [(ngModel)]="name">
+              </div>
+            </div>
+
+            <div class="form-group row"> <!-- Email -->
+              <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Tu dirección de correo" [(ngModel)]="email">
+              </div>
+            </div>
+
+            <div class="form-group row"> <!-- Message-->
+              <label for="message" class="col-sm-2 col-form-label">Mensaje</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="message" name="message"
+                          placeholder="Tu mensaje" rows="3" [(ngModel)]="message"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group"> <!-- Send Button -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+          </form>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 text-center footer-social">
+      <div class="col-lg-6 col-md-4 text-center footer-social">
         <div class="footer-col">
           <h6>Seguinos</h6>
-          <a href="https://www.instagram.com/metcba/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
-          <a href="https://twitter.com/met_cba" target="_blank"><i class="fa fa-lg fa-twitter-square"></i></a>
-          <a href="https://www.facebook.com/MetCbaOK" target="_blank" ><i class="fa fa-lg fa-facebook-square"></i></a>
-          <a href="https://www.linkedin.com/company/met-cba" target="_blank" ><i class="fa fa-lg fa-linkedin"></i></a>
-          <a href="https://metcba.org" target="_blank" ><i class="fa fa-lg fa-dribbble"></i></a>
+          <a href="https://www.instagram.com/metcba/" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+          <a href="https://twitter.com/met_cba" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+          <a href="https://www.facebook.com/MetCbaOK" target="_blank" ><i class="fa fa-2x fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/company/met-cba" target="_blank" ><i class="fa fa-2x fa-linkedin"></i></a>
+          <a href="https://metcba.org" target="_blank" ><i class="fa fa-2x fa-dribbble"></i></a>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-12 text-center">
         <div class="footer-col">
           <h6>Mujeres en Tecnología</h6>
-          <p>Trabajamos para que más mujeres alcancen todo su potencial en tecnología</p>
+          <p>Trabajamos para que más mujeres alcancen todo su potencial en tecnología. Bootcamp Web es una de nuestras iniciativas de formación y de inspirar vocación.</p>
+          <a href="metcba.org">metcba.org</a>
         </div>
       </div>
     </div>

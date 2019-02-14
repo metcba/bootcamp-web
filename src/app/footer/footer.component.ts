@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
+
 export class FooterComponent implements OnInit {
+  // Variables for the form
+  name: string;
+  email: string;
+  message: string;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  processForm() {
+    console.log("Enviamos el formulario!");
+    console.log(this.name);
+    console.log(this.email);
+    console.log(this.message);
   }
 
 }

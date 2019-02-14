@@ -27,15 +27,24 @@
         margin-right: 10px;
         margin-left: 10px;
     }
+    .btn-primary {
+        background: transparent;
+        &:hover {
+          border: 2px solid $secondary;
+          background: transparent;
+          color: $secondary;
+        }
+    }
 }
 
 .footer-social a {
     background: transparent;
-    width: 40px;
+    width: 50px;
     display: inline-table;
     height: 40px;
     text-align: center;
     font-size: 1rem;
+    color: $secondary;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
