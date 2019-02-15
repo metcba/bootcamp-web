@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../services/message.service';
 
 @Component({
   selector: 'app-footer',
@@ -12,15 +13,16 @@ export class FooterComponent implements OnInit {
   email: string;
   message: string;
 
-  constructor() { }
+  constructor(public _MessageService: MessageService) { }
 
   ngOnInit() { }
 
   processForm() {
-    console.log("Enviamos el formulario!");
-    console.log(this.name);
-    console.log(this.email);
-    console.log(this.message);
+    this._MessageService.sendMessage(
+      {name: this.name, email: this.email, message: this.message}
+    ).subscribe(() => {
+      // TODO propagate error from backend
+      console.log('Formulario enviado')
+    });
   }
-
 }
