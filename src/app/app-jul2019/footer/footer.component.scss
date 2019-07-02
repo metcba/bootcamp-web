@@ -1,0 +1,10 @@
+// TODO: Agregar correctamente la ruta (~variables.scss)
+@import "../../../variables.scss";
+@import "../../../estilos.scss";
+
+footer {
+  background-color: $bootcamp-color-1;
+  height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

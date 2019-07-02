@@ -11,7 +11,16 @@ import { PlanningComponent } from './planning/planning.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HomeComponent, MentorsComponent, SponsorsComponent, OngComponent, PlanningComponent, NavbarComponent],
+  declarations: [
+    AppComponent, 
+    FooterComponent, 
+    HomeComponent, 
+    MentorsComponent, 
+    SponsorsComponent, 
+    OngComponent, 
+    PlanningComponent, 
+    NavbarComponent
+  ],
   imports: [
     CommonModule,
     BrowserModule
