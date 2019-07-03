@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5 {
 .full-page {
   min-height: 100vh;
 }
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .block {
   padding: 20px;
   margin-bottom: 30px;
@@ -21,12 +25,6 @@ h1, h2, h3, h4, h5 {
     color: white;
     height: 300px;
   }
-}
-.color1 {
-  background-color: $bootcamp-color-1;
-}
-.color2 {
-  background-color: $bootcamp-color-2;
 }
 .button {
   color: white;
@@ -54,4 +52,34 @@ h1, h2, h3, h4, h5 {
 }
 .social {
   font-size: 1.3em;
+}
+.gradient {
+  background: rgb(112,54,130);
+  background: -moz-linear-gradient(45deg, rgba(112,54,130,1) 0%, rgba(226,71,82,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(112,54,130,1) 0%, rgba(226,71,82,1) 100%);
+  background: linear-gradient(45deg, rgba(112,54,130,1) 0%, rgba(226,71,82,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#703682",endColorstr="#e24752",GradientType=1);
+}
+.color1 {
+  background-color: $bootcamp-color-1;
+}
+.color2 {
+  background-color: $bootcamp-color-2;
+}
+.platinum {
+  background-color: $platinum-color;
+}
+.gold {
+  background-color: $gold-color;
+}
+.silver {
+  background-color: $silver-color;
+}
+.span-background {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.text-color-bg {
+  color: white;
 }
