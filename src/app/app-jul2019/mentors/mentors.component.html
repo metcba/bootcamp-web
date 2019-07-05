@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container fondo2">
   <div class="title">
     <small>NUESTRAS MENTORAS</small>
     <h2 class="text-center">No es sólo enseñar a programar, es inspirar vocación</h2>
@@ -17,11 +17,11 @@
 
   <br>
 
-  <div class="row">
-    <div class="col-md-3 col-xs-6 block">
+  <div *ngIf="mentors.length > 0" class="row">
+    <div *ngFor="let mentor of mentors" class="col-md-3 col-xs-6 block">
       <div class="mentora"></div>
-      <h4>Nombre Apellido</h4>
-      <p>UX Designer @ Empresa</p>
+      <h4>{{ mentor.name }}</h4>
+      <p>{{ mentor.description }}</p>
     </div>
     <div class="col-md-3 col-xs-6 block">
       <div class="mentora"></div>
