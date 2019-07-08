@@ -6,10 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sponsors.component.scss']
 })
 export class SponsorsComponent implements OnInit {
+  sponsors: any;
 
   constructor() { }
 
   ngOnInit() {
+    this.sponsors = {
+      'platinum': [
+        {
+          'name': 'McAfee',
+          'logo': 'assets/mcafee.png'
+        }
+      ],
+      'gold': [
+        {
+          'name': 'Cintelink',
+          'logo': 'assets/cintelink.png'
+        }
+      ],
+      'silver': [
+        {
+          'name': 'Cintelink',
+          'logo': 'assets/cintelink.png'
+        },
+        {
+          'name': 'Acamica',
+          'logo': 'assets/acamica.png'
+        }
+      ]
+    }
   }
 
 }

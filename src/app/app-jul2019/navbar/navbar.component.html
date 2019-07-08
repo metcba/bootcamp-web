@@ -1,3 +1,26 @@
-<p>
-  navbar works!
-</p>
+<nav class="navbar position-absolute pt-0 align-items-start">
+  <a href="#" class="navbar-brand pt-0">
+    <img src="assets/logo-b2.png" class="img-fluid">
+  </a>
+
+  <div ngbDropdown class="pt-3">
+    <button class="navbar-toggler d-block d-sm-none" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <ul class="navbar-nav">
+        <li ngbDropdown class="nav-item">
+          <a class="nav-link link-nav" id="edicionesAnteriores" ngbDropdownToggle href="#">EDICIONES ANTERIORES</a>
+          <div ngbDropdownMenu aria-labelledby="edicionesAnteriores">
+            <a ngbDropdownItem href="#">Febrero 2019</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="button color1">IR AL CURSO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
