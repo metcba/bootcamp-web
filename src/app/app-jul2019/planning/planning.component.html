@@ -5,14 +5,14 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="col-lg-4 col-md-6 col-xs-12">
       <div class="block">
         <img src="assets/intro.png" class="img-fluid">
       </div>
     </div>
     <div
       *ngFor="let day of planning; let even = even; let odd = odd"
-      class="col-md-4 col-sm-6 col-xs-12">
+      class="col-lg-4 col-md-6 col-xs-12">
       <div class="block" [ngClass]="{ color1: even, color2: odd }">
         <span>{{ day.date }}</span>
         <h3>{{ day.title }}</h3>

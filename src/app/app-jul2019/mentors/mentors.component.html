@@ -1,7 +1,7 @@
 <div class="w-100 fondo2">
   <section class="container">
     <div class="title">
-      <small>NUESTRAS MENTORAS</small>
+      <small>NUESTROS MENTORES Y SPEAKERS</small>
       <h2 class="text-center">No es sólo enseñar a programar, es inspirar vocación</h2>
     </div>
 
@@ -13,31 +13,23 @@
     <br>
 
     <div class="text-center">
-      <a href="#" class="button color1">INSCRIBITE COMO MENTORA</a>
+      <a href="http://bit.ly/BootcampWebMentoras" target="_blank" class="button color1">INSCRIBITE COMO MENTORA</a>
+      &nbsp;
+      <a href="http://bit.ly/BootcampWebMentoras" target="_blank" class="button color1">INSCRIBITE COMO SPEAKER</a>
     </div>
 
     <br>
 
-    <div *ngIf="mentors.length > 0" class="row">
-      <div *ngFor="let mentor of mentors" class="col-md-3 col-xs-6 block">
-        <div class="mentora"></div>
-        <h4>{{ mentor.name }}</h4>
-        <p>{{ mentor.description }}</p>
-      </div>
-      <div class="col-md-3 col-xs-6 block">
-        <div class="mentora"></div>
-        <h4>Nombre Apellido</h4>
-        <p>UX Designer @ Empresa</p>
-      </div>
-      <div class="col-md-3 col-xs-6 block">
-        <div class="mentora"></div>
-        <h4>Nombre Apellido</h4>
-        <p>UX Designer @ Empresa</p>
-      </div>
-      <div class="col-md-3 col-xs-6 block">
-        <div class="mentora"></div>
-        <h4>Nombre Apellido</h4>
-        <p>UX Designer @ Empresa</p>
+    <div *ngIf="participants.length > 0" class="row justify-content-center">
+      <div *ngFor="let p of participants" class="col-lg-3 col-md-4 col-xs-6 block">
+        <a href="{{ p.linkedin }}" target="_blank">
+          <div class="mentora">
+            <img src="assets/{{ p.photo }}" class="img-fluid" alt="{{ p.name }}">
+          </div>
+        </a>
+        <small>{{ p.type }}</small>
+        <h4>{{ p.name }}</h4>
+        <p>{{ p.description }}</p>
       </div>
     </div>
   </section>
