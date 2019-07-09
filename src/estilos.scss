@@ -90,6 +90,10 @@ section {
   color: white;
 }
 .fondo2 {
-  background: #FFFFFF url('../../../assets/fondo2.png') no-repeat center middle;
+  background: #FFFFFF url('../../../assets/fondo2.png') no-repeat center;
+  background-size: cover;
+}
+.fondo1 {
+  background: #FFFFFF url('../../../assets/fondo1.png') no-repeat center;
   background-size: cover;
 }

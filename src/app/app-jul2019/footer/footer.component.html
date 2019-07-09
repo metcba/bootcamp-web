@@ -8,20 +8,13 @@
         <h5>Contacto</h5>
         <p>Escribinos a <strong>bootcamp@metcba.org</strong></p>
       </div>
-      <div class="col-sm-3 col-xs-6">
+      <div *ngIf="social.length > 0" class="col-sm-3 col-xs-6">
         <h5>Seguinos</h5>
         <ul class="list inline">
-          <li>
-            <a href="#" class="social"><i class="fa fa-facebook-square"></i></a>
-          </li>
-          <li>
-            <a href="#" class="social"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" class="social"><i class="fa fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+          <li *ngFor="let s of social">
+            <a href="{{ s.link }}" class="social">
+              <i class="fa fa-{{ s.icon }}"></i>
+            </a>
           </li>
         </ul>
       </div>

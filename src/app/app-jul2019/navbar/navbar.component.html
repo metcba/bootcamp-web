@@ -1,26 +1,35 @@
-<nav class="navbar position-absolute pt-0 align-items-start">
-  <a href="#" class="navbar-brand pt-0">
-    <img src="assets/logo-b2.png" class="img-fluid">
-  </a>
+<div class="position-absolute w-100">
 
-  <div ngbDropdown class="pt-3">
-    <button class="navbar-toggler d-block d-sm-none" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg pt-0 align-items-start">
+    <a href="/" class="navbar-brand pt-0 brand">
+      <img src="assets/logo-b2.png" class="img-fluid">
+    </a>
+
+    <button class="navbar-toggler mt-3" type="button" (click)="toggleNavbar()" >
       <i class="fa fa-bars"></i>
     </button>
 
-    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <div class="collapse navbar-collapse mt-3" [ngClass]="{ 'show': open }">
+      <ul class="mr-auto"></ul>
       <ul class="navbar-nav">
-        <li ngbDropdown class="nav-item">
-          <a class="nav-link link-nav" id="edicionesAnteriores" ngbDropdownToggle href="#">EDICIONES ANTERIORES</a>
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link link-nav" id="edicionesAnteriores" ngbDropdownToggle href="#">
+            EDICIONES ANTERIORES
+          </a>
           <div ngbDropdownMenu aria-labelledby="edicionesAnteriores">
             <a ngbDropdownItem href="#">Febrero 2019</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a href="#" class="button color1">IR AL CURSO</a>
+          <a href="https://bootcamp-web.gitbook.io/bootcamp-web/" target="_blank" class="button color1">
+            IR AL CURSO
+          </a>
         </li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
+</div>
+
