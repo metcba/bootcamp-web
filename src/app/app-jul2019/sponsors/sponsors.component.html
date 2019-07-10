@@ -2,7 +2,7 @@
   <div *ngIf="sponsors.platinum.length > 0" class="text-center sponsors">
     <h5>Sponsors <span class="platinum span-background">Platinum</span></h5>
     <div class="row justify-content-center align-items-center">
-      <div *ngFor="let sponsor of sponsors.platinum" class="col-lg-4 col-sm-8 col-xs-12">
+      <div *ngFor="let sponsor of sponsors.platinum" class="col-lg-4 col-sm-8 col-12">
         <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" class="img-fluid">
       </div>
     </div>
@@ -11,7 +11,7 @@
   <div *ngIf="sponsors.gold.length > 0" class="text-center sponsors">
     <h5>Sponsors <span class="gold span-background">Gold</span></h5>
     <div class="row justify-content-center align-items-center">
-      <div *ngFor="let sponsor of sponsors.gold" class="col-lg-3 col-sm-6 col-xs-8">
+      <div *ngFor="let sponsor of sponsors.gold" class="col-lg-3 col-sm-6 col-8">
         <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" class="img-fluid">
       </div>
     </div>
@@ -20,7 +20,7 @@
   <div *ngIf="sponsors.silver.length > 0" class="text-center sponsors">
     <h5>Sponsors <span class="silver span-background">Silver</span></h5>
     <div class="row justify-content-center align-items-center">
-      <div *ngFor="let sponsor of sponsors.silver" class="col-lg-2 col-sm-4 col-xs-6co">
+      <div *ngFor="let sponsor of sponsors.silver" class="col-lg-2 col-sm-4 col-6">
         <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" class="img-fluid">
       </div>
     </div>

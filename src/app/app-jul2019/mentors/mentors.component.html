@@ -6,7 +6,7 @@
     </div>
 
     <div class="row justify-content-center">
-      <p class="text-center col-xs-12 col-sm-8">
+      <p class="text-center col-sm-8 col-12">
         La parte más importante de la formación es el acompañamiento a través de mentoras. Trabajamos con mujeres profesionales en distintas áreas, para guiar a cada uno de los equipos durante su aprendizaje en el bootcamp.
       </p>
     </div>
@@ -21,7 +21,7 @@
     <br>
 
     <div *ngIf="participants.length > 0" class="row justify-content-center">
-      <div *ngFor="let p of participants" class="col-lg-3 col-md-4 col-xs-6 block">
+      <div *ngFor="let p of participants" class="col-lg-3 col-md-4 col-sm-6 col-12 block">
         <a href="{{ p.linkedin }}" target="_blank">
           <div class="mentora">
             <img src="assets/{{ p.photo }}" class="img-fluid" alt="{{ p.name }}">

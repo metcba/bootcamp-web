@@ -47,6 +47,27 @@ export class MentorsComponent implements OnInit {
             description: 'UX designer @ Mercado Libre',
             linkedin: 'https://www.linkedin.com/in/julia-pereyra-sarry-010384131/'
         },
+        {
+            name: 'Constanza Uanini',
+            photo: 'constanza.jpg',
+            type: 'Mentora',
+            description: 'Ingeniera en Sistemas de Información. Front End Ssr Engineer @ Mercado Libre.',
+            linkedin: 'https://www.linkedin.com/in/constanza-uanini-40b3b172'
+        },
+        {
+            name: 'Joel Alejandro Villarreal Bertoldi',
+            photo: 'joel.jpg',
+            type: 'Speaker y Mentor',
+            description: 'Software Engineer, Graphic Designer @ Prototypal.',
+            linkedin: 'https://www.linkedin.com/in/joelvillarrealbertoldi'
+        },
+        {
+            name: 'Andre Laluf',
+            photo: 'andre.jpg',
+            type: 'Speaker y Mentora',
+            description: 'Backend developer @ Mercado Libre',
+            linkedin: 'https://www.linkedin.com/in/andrea-laluf-b9925b10b/'
+        }
     ];
 
     this.shuffle(this.participants);
