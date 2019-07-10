@@ -35,7 +35,7 @@ export class MentorsComponent implements OnInit {
         },
         {
             name: 'Naho Puente',
-            photo: 'naho.jpeg',
+            photo: 'naho.jpg',
             type: 'Mentora',
             description: 'Estudiante de la Lic. en Cs. de la Computación. Developer @ Bitlogic',
             linkedin: 'https://www.linkedin.com/in/nahomy-puentec/'
@@ -67,7 +67,21 @@ export class MentorsComponent implements OnInit {
             type: 'Speaker y Mentora',
             description: 'Backend developer @ Mercado Libre',
             linkedin: 'https://www.linkedin.com/in/andrea-laluf-b9925b10b/'
-        }
+        },
+        {
+            name: 'Lau Mercado',
+            photo: 'lau-mer.jpg',
+            type: 'Mentora',
+            description: 'Estudiante de Computación en FaMAF. Programadora',
+            linkedin: 'https://www.linkedin.com/in/gladys-laura-mercado'
+        },
+        {
+            name: 'Nati Caceres Meyer',
+            photo: 'nati.jpg',
+            type: 'Mentora',
+            description: 'Sr. Integration Engineer @ Olapic, y apasionada por UX/UI.',
+            linkedin: 'https://www.linkedin.com/in/natachacaceresmeyer/'
+        },
     ];
 
     this.shuffle(this.participants);

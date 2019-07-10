@@ -15,7 +15,8 @@ export class SponsorsComponent implements OnInit {
       'platinum': [
         {
           'name': 'McAfee',
-          'logo': 'assets/mcafee.png'
+          'logo': 'assets/mcafee.png',
+          'link': 'https://www.mcafee.com'
         }
       ],
       'gold': [
@@ -23,11 +24,13 @@ export class SponsorsComponent implements OnInit {
       'silver': [
         {
           'name': 'Cintelink',
-          'logo': 'assets/cintelink.png'
+          'logo': 'assets/cintelink.png',
+          'link': 'https://cintelink.com.ar'
         },
         {
           'name': 'Acamica',
-          'logo': 'assets/acamica.png'
+          'logo': 'assets/acamica.png',
+          'link': 'https://www.acamica.com/'
         }
       ]
     }
