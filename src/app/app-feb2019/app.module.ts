@@ -14,7 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'feb2019', component: HomeComponent},
   {path: 'about', component: AboutComponent},
 ];
 
@@ -33,11 +33,10 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-     appRoutes,
-     { enableTracing: false,
-       scrollPositionRestoration: 'enabled' } // <-- debugging purposes only, set to true
-    )
+    RouterModule.forChild(appRoutes)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

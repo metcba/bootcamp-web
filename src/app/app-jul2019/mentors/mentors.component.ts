@@ -48,7 +48,7 @@ export class MentorsComponent implements OnInit {
             linkedin: 'https://www.linkedin.com/in/julia-pereyra-sarry-010384131/'
         },
         {
-            name: 'Constanza Uanini',
+            name: 'Coti Uanini',
             photo: 'constanza.jpg',
             type: 'Mentora',
             description: 'Ingeniera en Sistemas de Información. Front End Ssr Engineer @ Mercado Libre.',

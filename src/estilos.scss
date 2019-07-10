@@ -97,3 +97,17 @@ section {
   background: #FFFFFF url('../../../assets/fondo1.png') no-repeat center;
   background-size: cover;
 }
+.bootcamp-nav {
+  position: absolute;
+}
+.menu, .menu ul, .menu ul li {
+  background-color: white;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bootcamp-nav {
+      position: relative;
+  }
+}

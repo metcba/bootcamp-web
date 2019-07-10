@@ -1,35 +1,40 @@
-<div class="position-absolute w-100">
+<div class="bootcamp-nav w-100">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg pt-0 align-items-start">
+      <a href="/" class="navbar-brand pt-0 brand">
+        <img src="assets/logo-b2.png" class="img-fluid">
+      </a>
 
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg pt-0 align-items-start">
-    <a href="/" class="navbar-brand pt-0 brand">
-      <img src="assets/logo-b2.png" class="img-fluid">
-    </a>
+      <button class="navbar-toggler mt-3" type="button" (click)="toggleNavbar()" >
+        <i class="fa fa-bars"></i>
+      </button>
 
-    <button class="navbar-toggler mt-3" type="button" (click)="toggleNavbar()" >
-      <i class="fa fa-bars"></i>
-    </button>
+      <div class="collapse navbar-collapse mt-3 menu" [ngClass]="{ 'show': open }">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="https://metcba.org" target="_blank">
+              <img src="assets/logo-met.png" class="img-fluid" style="width: 70%">
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <!--<li class="nav-item" ngbDropdown>
+            <a class="nav-link link-nav" id="edicionesAnteriores" ngbDropdownToggle href="#">
+              EDICIONES ANTERIORES
+            </a>
+            <div ngbDropdownMenu aria-labelledby="edicionesAnteriores">
+              <a ngbDropdownItem [routerLink]="['/febrero-2019']">Febrero 2019</a>
+            </div>
+          </li>-->
 
-    <div class="collapse navbar-collapse mt-3" [ngClass]="{ 'show': open }">
-      <ul class="mr-auto"></ul>
-      <ul class="navbar-nav">
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link link-nav" id="edicionesAnteriores" ngbDropdownToggle href="#">
-            EDICIONES ANTERIORES
-          </a>
-          <div ngbDropdownMenu aria-labelledby="edicionesAnteriores">
-            <a ngbDropdownItem href="#">Febrero 2019</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="https://bootcamp-web.gitbook.io/bootcamp-web/" target="_blank" class="button color1">
-            IR AL CURSO
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+          <li class="nav-item">
+            <a href="https://bootcamp-web.gitbook.io/bootcamp-web/" target="_blank" class="button color1">
+              IR AL CURSO
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
 

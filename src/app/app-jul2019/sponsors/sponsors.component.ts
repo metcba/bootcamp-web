@@ -19,10 +19,6 @@ export class SponsorsComponent implements OnInit {
         }
       ],
       'gold': [
-        {
-          'name': 'Cintelink',
-          'logo': 'assets/cintelink.png'
-        }
       ],
       'silver': [
         {
