@@ -88,6 +88,20 @@ export class MentorsComponent implements OnInit {
             type: 'Speaker',
             description: 'Lic. en Diseño Gráfico. Ssr. Diseñadora UX/UI @ Mercado Libre',
             linkedin: 'https://www.linkedin.com/in/marcela-sosa-palacios-5b4a5041'
+        },
+        {
+            name: 'Hernán Garzón de la Roza',
+            photo: 'hernan.jpg',
+            type: 'Mentor',
+            description: 'Desarrollador de Software Frontend, ex-UX, ex-Marketing',
+            linkedin: 'https://ar.linkedin.com/in/hernan-garzon-de-la-roza'
+        },
+        {
+            name: 'Facu Gaumet',
+            photo: 'facu.jpg',
+            type: 'Mentor',
+            description: 'Licenciado en Ciencias de la Computación. Frontender @ Mercado Libre en el equipo de Feedback & Reputation',
+            linkedin: 'https://www.linkedin.com/in/facundogaumet/'
         }
     ];
 
