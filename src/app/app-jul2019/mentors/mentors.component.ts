@@ -55,7 +55,7 @@ export class MentorsComponent implements OnInit {
             linkedin: 'https://www.linkedin.com/in/constanza-uanini-40b3b172'
         },
         {
-            name: 'Joel Alejandro Villarreal Bertoldi',
+            name: 'Joel Villarreal Bertoldi',
             photo: 'joel.jpg',
             type: 'Speaker y Mentor',
             description: 'Software Engineer, Graphic Designer @ Prototypal.',
@@ -72,7 +72,7 @@ export class MentorsComponent implements OnInit {
             name: 'Lau Mercado',
             photo: 'lau-mer.jpg',
             type: 'Mentora',
-            description: 'Estudiante de Computación en FaMAF. Programadora',
+            description: 'Estudiante de Computación @ FaMAF. Programadora',
             linkedin: 'https://www.linkedin.com/in/gladys-laura-mercado'
         },
         {
@@ -82,6 +82,13 @@ export class MentorsComponent implements OnInit {
             description: 'Sr. Integration Engineer @ Olapic, y apasionada por UX/UI.',
             linkedin: 'https://www.linkedin.com/in/natachacaceresmeyer/'
         },
+        {
+            name: 'Marce Sosa Palacios',
+            photo: 'marce.jpg',
+            type: 'Speaker',
+            description: 'Lic. en Diseño Gráfico. Ssr. Diseñadora UX/UI @ Mercado Libre',
+            linkedin: 'https://www.linkedin.com/in/marcela-sosa-palacios-5b4a5041'
+        }
     ];
 
     this.shuffle(this.participants);
