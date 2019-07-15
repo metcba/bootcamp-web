@@ -34,12 +34,15 @@ section {
 }
 .button {
   color: white;
+  display: inline-block;
   text-transform: capitalize;
+  white-space: nowrap;
   font-weight: 700;
   border-radius: 50px;
   padding: 10px 30px;
   font-size: 0.8em;
   text-decoration: none;
+  margin: 10px;
   &.big {
     font-size: 1.1em;
   }
@@ -104,10 +107,11 @@ section {
   background-color: white;
 }
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 320px) {
     .bootcamp-nav {
       position: relative;
+  }
+  h1 {
+    font-size: 1.3em;
   }
 }

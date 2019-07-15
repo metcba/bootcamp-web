@@ -102,7 +102,21 @@ export class MentorsComponent implements OnInit {
             type: 'Mentor',
             description: 'Licenciado en Ciencias de la Computación. Frontender @ Mercado Libre en el equipo de Feedback & Reputation',
             linkedin: 'https://www.linkedin.com/in/facundogaumet/'
-        }
+        },
+        {
+            name: 'Ash Quezada',
+            photo: 'ash.jpg',
+            type: 'Mentora',
+            description: 'Analista en Computación y continuo estudiando para la licenciatura',
+            linkedin: 'https://www.linkedin.com/in/ashley-quezada-99b79915b'
+        },
+        {
+            name: 'Emi Espindola',
+            photo: 'emi.jpg',
+            type: 'Mentora',
+            description: 'Ux Lead @ Tips',
+            linkedin: 'https://www.linkedin.com/in/espimarr/'
+        },
     ];
 
     this.shuffle(this.participants);
